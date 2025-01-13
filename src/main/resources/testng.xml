@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="OrangeHRM Application Automation Test And Test Suites ">
+    <listeners>
+        <listener class-name="com.bridgelabz.qa.extentreportlistener.ExtentReporterNG"/>
+    </listeners>
+    <test name="OrangeHRM application Testcases">
+        <classes>
+            <class name="com.bridgelabz.qa.LoginPageTest"/>
+<!--            <class name="com.bridgelabz.qa.DashboardPageTest"/>-->
+<!--            <class name="com.bridgelabz.qa.AdminPageTest"/>-->
+<!--            <class name="cucumber.TestRunner"/>-->
+        </classes>
+    </test>
+</suite>
