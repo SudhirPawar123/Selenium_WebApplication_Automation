@@ -54,35 +54,4 @@ public class ListenerWithExtentReport extends BaseTest implements ITestListener 
         extent.flush();
     }
 
-    /**
-     * Captures a screenshot and returns the file path.
-     *
-     * @param testName The name of the test case.
-     * @return The file path of the captured screenshot.
-     */
-//    public static String captureScreenshot(String testName) {
-//
-//        String screenshotDir = System.getProperty("user.dir") + "/screenshots/";
-//        String screenshotPath = screenshotDir + testName + ".png";
-//        File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-//        try {
-//            // Create directory if it doesn't exist
-//            Files.createDirectories(new File(screenshotDir).toPath());
-//
-//            // Save screenshot to the specified path
-//            Files.copy(screenshotFile.toPath(), new File(screenshotPath).toPath());
-//        } catch (IOException e) {
-//            System.out.println("Failed to capture screenshot: " + e.getMessage());
-//        }
-//        return screenshotPath;
-//    }
-
-    /**
-     * Sets the WebDriver instance for screenshot capture.
-     *
-     * @param webDriver The WebDriver instance.
-     */
-//    public static void setWebDriver(WebDriver webDriver) {
-//        driver = webDriver;
-//    }
 }
