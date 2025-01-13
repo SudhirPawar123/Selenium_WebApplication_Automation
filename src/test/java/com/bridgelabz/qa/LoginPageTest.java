@@ -1,11 +1,13 @@
 package com.bridgelabz.qa;
 
 import com.bridgelabz.qa.base.BaseTest;
-import com.bridgelabz.qa.extentreportlistener.ExtentReporterNG;
+//import com.bridgelabz.qa.extentreportlistener.ExtentReporterNG;
 import com.bridgelabz.qa.pages.DashboardPage;
 import com.bridgelabz.qa.pages.LoginPage;
 import io.qameta.allure.*;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -32,7 +34,7 @@ public class LoginPageTest extends BaseTest {
         logger.info("****************************** OrangeHRMTitleTest *****************************************");
         String title = loginPage.validateLoginPageTitle();
         Assert.assertEquals(title, "OrangeHRM");
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         logger.info("****************************** Ending test case *****************************************");
         logger.info("****************************** OrangeHRMTitleTest *****************************************");
     }
@@ -41,7 +43,7 @@ public class LoginPageTest extends BaseTest {
     public void validateOrangeHRMImageTest() throws InterruptedException {
         boolean flag = loginPage.validateOrangeHRMImage();
         Assert.assertTrue(flag);
-        Thread.sleep(3000);
+        Thread.sleep(2000);
     }
 
     @Test(priority = 3)
@@ -57,8 +59,8 @@ public class LoginPageTest extends BaseTest {
 
     @AfterMethod
     public void tearDown() throws InterruptedException {
-        Thread.sleep(4000);
-        driver.close();
+        Thread.sleep(3000);
+        driver.quit();
         logger.info("*************************** Finished text cases execution ******************************");
     }
 }

@@ -4,7 +4,7 @@
 
   <groupId>org.example</groupId>
   <artifactId>WebAppSeleniumAutomation</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>jar</packaging>
 
   <name>PageObjectModel</name>
@@ -57,11 +57,20 @@
       <version>2.41.2</version>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
     <dependency>
       <groupId>com.aventstack</groupId>
       <artifactId>extentreports</artifactId>
-      <version>5.0.5</version>
+      <version>5.1.2</version>
     </dependency>
+
+    <!-- Freemarker -->
+    <dependency>
+      <groupId>org.freemarker</groupId>
+      <artifactId>freemarker</artifactId>
+      <version>2.3.30</version>
+    </dependency>
+
     <dependency>
       <groupId>io.qameta.allure</groupId>
       <artifactId>allure-testng</artifactId>
